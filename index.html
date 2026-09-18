@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div class="scoreBoard">
+            <div class="scoreCtn">
+                <h3 class="teamName" id="home">HOME</h3>
+                <h1 class="score" id="homeScore">0</h1>
+                <div class="scoreBtnsCtn">
+                    <button class="addScoreBtn" onclick="addScore('home', 1); checkWinner();">+1</button>
+                    <button class="addScoreBtn" onclick="addScore('home', 2); checkWinner();">+2</button>
+                    <button class="addScoreBtn" onclick="addScore('home', 3); checkWinner();">+3</button>
+                </div>
+            </div>
+            <div class="scoreCtn">
+                <h3 class="teamName" id="guest">GUEST</h3>
+                <h1 class="score" id="guestScore">0</h1>
+                <div class="scoreBtnsCtn">
+                    <button class="addScoreBtn" onclick="addScore('guest', 1); checkWinner();">+1</button>
+                    <button class="addScoreBtn" onclick="addScore('guest', 2); checkWinner();">+2</button>
+                    <button class="addScoreBtn" onclick="addScore('guest', 3); checkWinner();">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="newGameBtn" onclick="newGame()">New Game</button>
+        <script src="index.js"></script>
+    </body>
+</html>
